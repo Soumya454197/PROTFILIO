@@ -170,7 +170,7 @@ img{max-width:100%;display:block;}
   .timeline__item{grid-template-columns:1fr;}
 }
 @media (max-width:720px){
-  .nav__links{position:fixed;top:64px;left:0;right:0;bottom:0;background:var(--bg);flex-direction:column;padding:32px;gap:8px;transform:translateY(-120%);transition:transform .25s ease;z-index:40;}
+  .nav__links{position:fixed;top:64px;left:0;right:0;bottom:auto;max-height:calc(100dvh - 64px);overflow-y:auto;overscroll-behavior:contain;background:var(--bg);flex-direction:column;padding:28px 32px 40px;gap:8px;transform:translateY(-120%);transition:transform .25s ease;z-index:40;}
   .nav__links.is-open{transform:translateY(0);}
   .nav__links a{padding:14px 8px;border-bottom:1px solid var(--line);font-size:1rem;}
   .nav__toggle{display:flex;}
